@@ -9,7 +9,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.home-container {
+    min-height: 100vh;
+    background: url(images/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+    background-size: cover;
+}
 nav {
 	display: flex;
 	flex-wrap: wrap;
