@@ -2,28 +2,41 @@
 
 body {
 	font-family: 'Noto Sans JP', sans-serif;
-	padding: auto;
-	margin: auto;
-	background-image: url("images/john-towner-JgOeRuGD_Y4-unsplash.jpg");
-	background-attachment: fixed;
+	padding: 0%;
+	margin: 0%;
+	background: #bbbbbb;
+}
+
+table ul li, a{
+	list-style-type: none;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+
+table ul li img {
+	width: 50px;
+	height: 50px;
+}
+
+.image {
+	min-height: 100%;
+	background: url("images/Background.webp");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
+	background-color: #080809;
 }
-.home-container {
-    min-height: 100vh;
-    background: url(images/john-towner-JgOeRuGD_Y4-unsplash.jpg);
-    background-size: cover;
-}
+
 nav {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #ffffff8d;
-	position: sticky;
-	padding-right: 2%;
-	padding-left: 2%;
-	box-shadow: 0px 2px #ffffff1a;
+	background-color: rgba(128, 128, 128, 0.399);
+	position: fixed;
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
 }
 
 nav .profile {
@@ -45,147 +58,152 @@ nav .profile h1 {
 nav ul {
 	display: flex;
 	list-style-type: none;
+	flex-direction: row;
 }
 
-nav ul li {
-	margin-left: 20px;
+ul li {
 	cursor: pointer;
+	margin-left: 10px;
 }
 
 nav ul li:hover {
-	background-color: #ffffff45;
+	background-color: grey;
+	color: white;
+
 }
 
-nav ul a {
+ul a {
 	text-decoration: none;
-	color: black;
+	color: whitesmoke;
 	cursor: pointer;
+	animation-duration: 4s;
+	animation-name: slidein;
 }
 
-nav ul li img {
+@keyframes slidein {
+	from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+	to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
+ul li img {
 	margin-right: 3px;
 	width: 20px;
 	height: 20px;
 }
 
 .page-content {
-	margin: 4%;
+	margin: 0% 4%;
 }
 
-.page-content header {
+header {
 	margin-top: auto;
 	max-width: 85%;
 }
 
-.page-content header h1 {
+header h1 {
 	margin: auto;
+	padding-top: 10px;
 	text-transform: uppercase;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 6vw;
 	color: #ccc;
 }
 
-.page-content header p {
+header p {
 	line-height: 30px;
 	margin-right: 45%;
 	color: #ffffff;
 	background-color: rgba(145, 145, 145, 0.151);
 }
-/*
-.page-content .presentation-image {
-	margin-top: 5%;
-}
 
-.page-content .presentation-image img {
-	max-width: 100%;
-	height: auto;
-}
-*/
-.page-content .projects-section {
+.projects-section {
 	margin-top: 6%;
 	margin-left: 10%;
 	margin-right: 5%;
 	background-color: #ffffff8d;
-	box-shadow: 1px 1px 3px 3px #00000042;
+	box-shadow: 5px 5px 5px 5px #0000000a;
 	border-radius: 1vw;
 	padding-left: 10%;
 	cursor: pointer;
 }
 
-.page-content .projects-section h1 {
+.projects-section h1 {
 	font-family: 'Noto Sans JP', sans-serif;
 	text-transform: uppercase;
 	font-size: 3vw;
 }
 
-.page-content .projects-section .projects {
+.projects-section .projects {
 	display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 
-.page-content .projects-section .project {
+.projects-section .project {
 	margin-right: 20px;
 	max-width: 195px;
 	padding-left: 10px;
 }
 
-.page-content .projects-section .project h4 {
+.projects-section .project h4 {
 	margin: 0;
 }
 
-.page-content .projects-section .project .description {
+.projects-section .project .description {
 	font-size: 12px;
 }
-.page-content .projects-section .project a{
+
+.projects-section .project a {
 	text-decoration: none;
 	color: #00085c;
 	cursor: pointer;
 }
 
-.page-content .projects-section .project a:hover{
+.projects-section .project a:hover {
 	background-color: #1f1f1f;
 	color: #ccc;
 }
 
-.page-content .projects-section .project .dates {
+.projects-section .project .dates {
 	font-size: 13px;
 	color: rgb(36, 36, 36);
 }
-iframe{
-	margin-bottom: 10%;
-	padding-bottom: 10%;
-}
 
 footer {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: #ffffffd6;
-    color: black;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: stretch;
+	margin-top: 0%;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	background-color: #1f1f1f;
+	color: whitesmoke;
+	flex-wrap: wrap;
+	align-content: space-around;
+	align-items: stretch;
 }
 
 
-footer #colonne p
-{
+footer #colonne p {
 	font-size: 15px;
-	color: black;
+	color: whitesmoke;
 	cursor: pointer;
 }
 
 footer a {
 	text-decoration: none;
-	color: black;
+	color: whitesmoke;
 	font-size: 15px;
 	cursor: pointer;
 }
 
-footer #colonne a:hover, p:hover {
-	background-color: #91919127;
+footer #colonne p:hover {
+	background-color: #dbdbdb27;
 }
 
 footer p img {
@@ -193,46 +211,48 @@ footer p img {
 }
 
 
-label, #toggle
-{
-    display: none;
+label,
+#toggle {
+	display: none;
 }
 
 @media screen and (max-width: 700px) {
-	
-    nav .main_pages 
-    {
-        display: none;
-        flex-direction: column;
-    }
- 
-	nav ul li, nav ul li a{
-		font-size: 15px;
+
+	nav .main_pages {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+		color: black;
+		background-color: #80808081;
+		top: 110%;
 	}
 
-    label 
-    {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10%;
-        font-size: 40px;
-        color: black;
-        cursor: pointer;
-    }
- 
-    #toggle:checked + .main_pages {
-        display: flex;
-    }
+	nav ul li,
+	nav ul li a{
+		font-size: 15px;
+		color: black;
+		background-color: #ccc;
+	}
 
+	label {
+		width: 30px;
+		display: flex;
+		margin-right: 10%;
+		font-size: 40px;
+		cursor: pointer;
+	}
 
-	.page-content header {
-		margin-top: 10%;
+	#toggle:checked+.main_pages {
+		display: flex;
+	}
+
+	header {
+		padding-top: 10%;
 		max-width: 100%;
 	}
 
-	.page-content header p{
+	header p {
 		line-height: 30px;
 		margin: auto;
 		margin-bottom: 10%;
@@ -241,25 +261,25 @@ label, #toggle
 		background-color: rgba(145, 145, 145, 0.151);
 	}
 
-	.page-content .projects-section {
+	.projects-section {
 		margin-top: 15%;
 	}
 
-	.page-content .projects-section h1 {
+	.projects-section h1 {
 		font-size: 1.5em;
 	}
 
-	.page-content .projects-section .project {
+	.projects-section .project {
 		margin-right: 10%;
 		margin-bottom: 15px;
 		max-width: 100%;
 	}
 
-	.page-content .projects-section .project .description {
+	.projects-section .project .description {
 		font-size: 13px;
 	}
-	
-	iframe{
+
+	iframe {
 		display: none;
 	}
 
@@ -272,8 +292,7 @@ label, #toggle
 		margin-left: 10px;
 	}
 
-	.Ecole{
+	.Ecole {
 		display: none;
 	}
 }
-
