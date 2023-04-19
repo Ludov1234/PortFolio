@@ -7,11 +7,18 @@ body {
 	background: #bbbbbb;
 }
 
-table ul li, a{
+ul li, a{
 	list-style-type: none;
-	margin-top: 20px;
-	display: flex;
-	align-items: center;
+    display: flex;
+	margin: 10px;
+    align-items: center;
+    font-size: 15px;
+}
+ul li:hover, a:hover {
+	background-color: black;
+	color: white;
+	border-radius: 25px;
+
 }
 
 table ul li img {
@@ -21,18 +28,19 @@ table ul li img {
 
 .image {
 	min-height: 100%;
-	background: url("images/Background.webp");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	background-color: #080809;
+	background: linear-gradient(-45deg, #d656ff, #81349b, #502060,#31143b,#0b1b5c, #0f267e, #1d47ee, #1d93ee);
+}
+
+.imageAu {
+	min-height: 100%;
+	background: linear-gradient(-45deg, #d656ff, #81349b, #502060,#31143b,#0b1b5c, #0f267e, #1d47ee, #1d93ee);
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgba(128, 128, 128, 0.399);
+	background-color: #80808066;
 	position: fixed;
 	width: 98%;
 	padding-left: 1%;
@@ -45,14 +53,14 @@ nav .profile {
 }
 
 nav .profile img {
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 }
 
 nav .profile h1 {
 	margin-left: 10px;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 nav ul {
@@ -117,9 +125,10 @@ header h1 {
 }
 
 header p {
-	line-height: 30px;
-	margin-right: 45%;
-	color: #ffffff;
+	line-height: 27px;
+    margin-right: 25%;
+    color: #ffffff;
+    padding: 5px;
 	background-color: rgba(145, 145, 145, 0.151);
 }
 
@@ -187,7 +196,6 @@ footer {
 	align-content: space-around;
 	align-items: stretch;
 }
-
 
 footer #colonne p {
 	font-size: 15px;
