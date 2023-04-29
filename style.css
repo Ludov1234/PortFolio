@@ -6,30 +6,94 @@ body {
 	margin: 0%;
 	background: #bbbbbb;
 }
-
-ul li, a{
-	list-style-type: none;
-    display: flex;
-	margin: 10px;
-    align-items: center;
-    font-size: 15px;
-}
-ul li:hover, a:hover {
-	background-color: black;
-	color: white;
-	border-radius: 25px;
-
-}
-
-table ul li img {
-	width: 50px;
-	height: 50px;
-}
-
+/* Page index */
 .image {
 	min-height: 100%;
-	background: linear-gradient(-45deg, #d656ff, #81349b, #502060,#31143b,#0b1b5c, #0f267e, #1d47ee, #1d93ee);
+	background: linear-gradient(90deg, #00154f  67%, #f4af1b 13%);
 }
+
+header {
+	margin-top: auto;
+	color: #f2bc94;
+}
+
+header h1 {
+	margin: 0%;
+	padding-top: 3%;
+	text-transform: uppercase;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 55px;
+	justify-content: center;
+}
+
+header p {
+	font-size: 19px;
+	color: #f2bc94;
+	background-color: #91919127;
+	margin-right: 10%;
+}
+
+.PP {
+	width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-left: 0px;
+    background-color: black;
+    background-size: cover;
+    background-position-x: center;
+	background-image: url(images/);
+}
+
+/* table{
+	border-collapse: collapse
+}
+
+td{
+	border: 1px solid black;
+	padding: 10px;
+} */
+
+table img {
+	width: 60px;
+	height: 60px;
+	margin-right: 5px;
+}
+
+table li, a{
+	list-style-type: none;
+	text-decoration: none;
+    display: flex;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 35px;
+    align-items: center;
+    font-size: 17px;
+	color: #f2bc94;
+	text-shadow: 1px 1px 5px black;
+	cursor: pointer;
+}
+table a:hover{
+	color: white;
+	animation: 1s infinite alternate hover;
+}
+
+@keyframes hover {
+	from {
+    margin-top:15%;
+	background-color: #d4040c;
+	border-radius: 25px 50px;
+}
+
+	to {
+    margin-top: 0%;
+	background-color:  black;
+	border-radius: 50px 25px;
+}
+}
+
+/* autre page */
 
 .imageAu {
 	min-height: 100%;
@@ -80,26 +144,6 @@ nav ul li:hover {
 
 }
 
-ul a {
-	text-decoration: none;
-	color: whitesmoke;
-	cursor: pointer;
-	animation-duration: 4s;
-	animation-name: slidein;
-}
-
-@keyframes slidein {
-	from {
-    margin-left: 100%;
-    width: 300%;
-}
-
-	to {
-    margin-left: 0%;
-    width: 100%;
-}
-}
-
 ul li img {
 	margin-right: 3px;
 	width: 20px;
@@ -110,27 +154,6 @@ ul li img {
 	margin: 0% 4%;
 }
 
-header {
-	margin-top: auto;
-	max-width: 85%;
-}
-
-header h1 {
-	margin: auto;
-	padding-top: 10px;
-	text-transform: uppercase;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 6vw;
-	color: #ccc;
-}
-
-header p {
-	line-height: 27px;
-    margin-right: 25%;
-    color: #ffffff;
-    padding: 5px;
-	background-color: rgba(145, 145, 145, 0.151);
-}
 
 .projects-section {
 	margin-top: 6%;
