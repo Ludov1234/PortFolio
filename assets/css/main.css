@@ -1833,7 +1833,8 @@ iframe.TSynthese {
     -webkit-transition: opacity .4s, -webkit-transform .4s;
     transition: opacity .4s, -webkit-transform .4s;
     transition: transform .4s, opacity .4s;
-    transition: transform .4s, opacity .4s, -webkit-transform .4s
+    transition: transform .4s, opacity .4s, -webkit-transform .4s;
+    font-size: 44px
 }
 
 .outer-nav>li::before {
@@ -1854,6 +1855,7 @@ iframe.TSynthese {
 }
 
 @media (max-width: 767px) {
+
     .outer-nav>li {
         font-size: 44px
     }
